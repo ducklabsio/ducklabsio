@@ -6,21 +6,84 @@
   <title>DuckLabs - Pricing</title>
   
 <style>
-  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f0f8ff; color: #222; }
-  header { background: #e0f7fa; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
-  nav a { margin: 0 1rem; text-decoration: none; color: #00796b; font-weight: bold; }
-  nav a:hover { text-decoration: underline; }
-  main { padding: 2rem; max-width: 960px; margin: auto; }
-  h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-  p { font-size: 1.1rem; line-height: 1.6; }
-  footer { text-align: center; font-size: 0.9rem; color: #666; border-top: 1px solid #ccc; padding: 1rem; margin-top: 2rem; }
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+  body {
+    font-family: 'Fredoka One', cursive;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #d0f0fd, #ffffff);
+    color: #333;
+  }
+  header {
+    background: #90e0ef;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #03045e;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #0077b6;
+  }
+  main {
+    padding: 2rem;
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #0077b6;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  .cta-btn {
+    display: inline-block;
+    margin: 2rem auto 0;
+    padding: 1rem 2rem;
+    background: #00b4d8;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background 0.3s, transform 0.2s;
+  }
+  .cta-btn:hover {
+    background: #0077b6;
+    transform: translateY(-3px);
+  }
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #ccc;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: #caf0f8;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 </style>
 
 </head>
 <body>
   
 <header>
-  <div><strong>DuckLabs</strong></div>
+  <div><img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Yellow_Duck_icon.png" alt="DuckLabs Logo" style="height:40px;vertical-align:middle;"> <strong>DuckLabs</strong></div>
   <nav>
     <a href="index.html">Home</a>
     <a href="solutions.html">Solutions</a>
@@ -30,7 +93,7 @@
   </nav>
 </header>
 
-  <main><h1>Pricing Plans</h1><p>Choose a plan that fits your needs — from hourly support to full-service DevOps engagements. Contact us for custom quotes.</p></main>
+  <main><h1>Simple Pricing for Big Splash</h1><p>Choose a flexible plan — whether you need a few hours or a full pond of DevOps talent. Custom quotes for enterprises.</p></main>
   
 <footer>
   <p>DuckLabs, Inc. &copy; 2025. All rights reserved.</p>
